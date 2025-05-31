@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>考試與作業倒數計時器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 考試與作業倒數計時器</h1>
+    <p id="current-date"></p>
+
+    <form>
+      <input type="text" id="title" placeholder="任務名稱" required />
+      <input type="text" id="subject" placeholder="科目" required />
+      <input type="date" id="deadline" required />
+      <select id="type">
+        <option value="作業">作業</option>
+        <option value="報告">報告</option>
+        <option value="考試">考試</option>
+      </select>
+      <button type="submit">➕ 新增任務</button>
+    </form>
+
+    <div id="task-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
